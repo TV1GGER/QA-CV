@@ -76,7 +76,7 @@ body {
 .nav__list .nav-list__item {
   display: inline-block;
   text-decoration: none;
-  color: chartreuse;
+  color: #7FFF00;
   letter-spacing: 0.05em;
   font-size: 1vw;
   font-family: "Rubik";
@@ -97,6 +97,380 @@ body {
           flex: 1 1 auto;
 }
 
+.portrait__container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  gap: 12.5vw;
+  margin-left: 1vw;
+  cursor: default;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.portrait-container__photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 25vw;
+  height: 25vw;
+  border: 0.5rem solid;
+  border-color: #a8a8a8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portrait-container-photo__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(1.2);
+          filter: grayscale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portrait__container:hover .portrait-container-photo__img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.portrait__container:hover .portrait-container__photo {
+  border-color: #7FFF00;
+}
+
+.portrait-container__content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Rubik";
+  color: gray;
+}
+
+.portrait-container__name {
+  width: 100%;
+  height: 5vw;
+  letter-spacing: 0.05em;
+  font-size: 4vw;
+  font-weight: 800;
+  margin-top: 20%;
+}
+
+@-webkit-keyframes professionMov {
+  0% {
+    left: 3vw;
+  }
+  50% {
+    left: -3vw;
+  }
+  100% {
+    left: 3vw;
+  }
+}
+
+@keyframes professionMov {
+  0% {
+    left: 3vw;
+  }
+  50% {
+    left: -3vw;
+  }
+  100% {
+    left: 3vw;
+  }
+}
+.portrait-container__profession {
+  position: relative;
+  letter-spacing: 0.09em;
+  font-size: 2vw;
+  font-weight: 600;
+  color: #7FFF00;
+  opacity: 70%;
+  -webkit-animation: professionMov 6s linear infinite;
+          animation: professionMov 6s linear infinite;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.portrait-container__profession:hover {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  opacity: 80%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.portrait-container__skills {
+  margin-top: 16%;
+  padding-bottom: 10%;
+}
+
+.skills-header {
+  height: 2.3vw;
+  font-size: 1.5vw;
+  letter-spacing: 0.4vw;
+  opacity: 0.6;
+}
+
+.skills-list__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1vw;
+}
+
+h3 {
+  font-size: 0.6vw;
+  text-align: left;
+  font-weight: 500;
+}
+
+.skills__list {
+  list-style: none;
+}
+
+.skills-list__bar {
+  display: block;
+  width: 18vw;
+  background: #eeeeee;
+  height: 0.6vw;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.3vw;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.skills-list__bar span {
+  height: 0.6vw;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, rgb(171, 250, 184) 0%, rgb(127, 255, 0) 100%);
+}
+
+.list__bar__html {
+  width: 80%;
+  -webkit-animation: html 3s;
+          animation: html 3s;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+.list__bar__css {
+  width: 75%;
+  -webkit-animation: css 3s;
+          animation: css 3s;
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.list__bar__scss {
+  width: 70%;
+  -webkit-animation: scss 3s;
+          animation: scss 3s;
+}
+
+@-webkit-keyframes scss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes scss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.list__bar__js {
+  width: 65%;
+  -webkit-animation: js 3s;
+          animation: js 3s;
+}
+
+@-webkit-keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.list__bar__git {
+  width: 50%;
+  -webkit-animation: git 3s;
+          animation: git 3s;
+}
+
+@-webkit-keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.list__bar__jira {
+  width: 55%;
+  -webkit-animation: jira 3s;
+          animation: jira 3s;
+}
+
+@-webkit-keyframes jira {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes jira {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+.list__bar__vs {
+  width: 70%;
+  -webkit-animation: vs 3s;
+          animation: vs 3s;
+}
+
+@-webkit-keyframes vs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes vs {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.list__bar__adobe {
+  width: 65%;
+  -webkit-animation: adobe 3s;
+          animation: adobe 3s;
+}
+
+@-webkit-keyframes adobe {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes adobe {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.portrait-bottom__line {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff), color-stop(gray), to(#ffffff));
+  background: linear-gradient(to left, #ffffff, gray, #ffffff);
+}
+
 .footer {
   width: 100%;
   background-color: black;
@@ -106,7 +480,7 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   height: 2.5vw;
-  color: chartreuse;
+  color: #7FFF00;
   font-family: "Rubik";
   letter-spacing: 0.05em;
   font-size: 1.1vw;
