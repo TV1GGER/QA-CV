@@ -50,6 +50,8 @@ body {
 .header {
   width: 100%;
   background-color: black;
+  position: fixed;
+  z-index: 70;
 }
 
 .header-container {
@@ -473,11 +475,11 @@ h3 {
 
 .contacts {
   position: sticky;
-  top: 1vw;
+  top: 5vw;
   max-width: 25vw;
   max-height: 25vw;
   background-color: black;
-  margin-top: 2vw;
+  margin-top: 12vw;
   margin-left: 2vw;
   border: 0.25vw solid;
   border-color: chartreuse;
@@ -493,6 +495,7 @@ h3 {
   padding-bottom: 1.4vw;
   padding-right: 1.4vw;
   padding-left: 1.4vw;
+  z-index: 90;
 }
 
 .contacts-header {
