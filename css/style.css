@@ -591,6 +591,29 @@ h3 {
   text-shadow: 0.1vw 0.2vw 0.2vw #7FFF00;
   margin-top: 2.5vw;
 }
+.content-information a {
+  text-decoration: none;
+  color: #7FFF00;
+  cursor: pointer;
+}
+.content-information a:hover {
+  color: rgb(230, 245, 16);
+}
+.content-information img {
+  display: block;
+  max-width: 100%;
+  opacity: 0.4;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.content-information img:hover {
+  opacity: 0.8;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
 
 .content-information-bottom-line {
   width: 100%;
