@@ -462,16 +462,24 @@ h3 {
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   max-width: 1920px;
-  margin: 0 auto;
   height: 2.5vw;
   color: #7FFF00;
   font-family: 'Rubik';
   letter-spacing: 0.05vw;
   font-size: 1.1vw;
   font-weight: 550;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+    color: #7FFF00;
+    transition: .3s;
+    &:hover {
+      color: #ffffff;
+    }
+  }
 }
